@@ -2,45 +2,77 @@
 <html lang="en">
 <head>
     <link href="./stylez.css" rel="stylesheet" />
+    <script src="script.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-    <h1> Welcome to Trader Joes Snack Suggester!!!!!<3 </h1>
-    <h2> It's one of those nights huh....</h2>
-    <h2> Munchies!!! </h2>
+
+<div id="headline">
+        <img class="image" src="https://media3.giphy.com/media/X5PsaxTP6U3h9dUSxd/giphy.gif">  
+        <div>
+            <h1> Welcome to Trader Joes Snack Suggester!!!<3 </h1>
+                <div id="imagez">
+                <center>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0XnGbePKUmDftorgTSNdRv?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </center>            
+                </div>
+        </div>
+        
+        <img class="image" src="https://media3.giphy.com/media/X5PsaxTP6U3h9dUSxd/giphy.gif">  
+    
+</div>   
+
 <body id="body">
+    <div>
+        <center> 
+            <p class="text"> It's one of those nights huh....</p>
+        <p class="text"> Keep having arguments with your SO in the middle of a Trader Joe's aisle about what to choose for snacks and you only have $4.96 left in your budget? </p>
+        </center>
+        
+    </div>
     <div id="top-pictures">
-        <marquee behavior="alternate" direction="left"> 
-            <img class="image" src="https://media.tenor.com/JK1zeqClExYAAAAC/pretzel-day.gif">
+        
+        <img class="image" src="https://media.tenor.com/JK1zeqClExYAAAAC/pretzel-day.gif">
         <img class="image" src="https://media.tenor.com/_n1Cd7--zzsAAAAC/pig-chip.gif">  
         <img class="image" src="https://media4.giphy.com/media/3b9OHGvLptiuGSGpib/giphy.gif">  
         <img class="image" src="https://media.tenor.com/XiUm-RNxhD8AAAAM/cheetos.gif">  
         <img class="image" src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/ce9757111183993.5ffd5f38aa256.gif">  
-        </marquee>
+        
         
     </div>
     <center>
-        <div class="dropdown">
-            <button> Whatcha Craving?!!!?!??!?!?</button>
-            <div class="dropdown-content">
-                <a href="https://blog.hubspot.com/">Blog</a>
-                <a rel="noopener" target="_blank" href="https://www.youtube.com/user/hubspot">YouTube</a>
-            </div>
-        </div>
+        <label for="Craving">Select a Craving:</label>
+        <select name="craving" id="craving">
+        <option value="salty">Salty</option>
+        <option value="savory">Savory</option>
+        <option value="sour" Sour>Sour</option>
+        <option value="sweet" selected>Sweet</option>
+        <option value="crunchy" selected>Crunchy</option>
+        <option value="cold" selected>Cold</option>
+        <option value="chocolate" selected>Chocolate</option>
+        </select>
         
+        <label for="Intensity">Select an Intensity:</label>
+        <select name="intensity" id="intensity">
+        <option value="basic">Basic</option>
+        <option value="baby">Baby</option>
+        <option value="boring">Baby</option>
+        <option value="american">American</option>
+        <option value="heart-attack" selected>Heart-Attack</option>
+        </select>
     </center>
-    <div id="top-pictures">
-        <marquee behavior="alternate" direction="right">
-            <img class="image" src="https://media.tenor.com/JK1zeqClExYAAAAC/pretzel-day.gif">
-            <img class="image" src="https://media.tenor.com/_n1Cd7--zzsAAAAC/pig-chip.gif">  
-        <img class="image" src="https://media4.giphy.com/media/3b9OHGvLptiuGSGpib/giphy.gif">  
-        <img class="image" src="https://media.tenor.com/XiUm-RNxhD8AAAAM/cheetos.gif">  
-        <img class="image" src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/ce9757111183993.5ffd5f38aa256.gif">  
-        </marquee>
-        
-        
+
+    <div class="interactive">
+        <center>
+            <button class="button" id="myBtn" onclick="generateSpecific()">Generate Top Tier Recommendations</button>
+            <button class="button" id="myRandomBtn" onclick="generateRandom()">Generate A Random Rec</button>
+        </center>
     </div>
+    <div id="extra">
+
+    </div>
+    
 </body>
 </html> 

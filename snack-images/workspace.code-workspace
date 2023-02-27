@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../mentored-sp23-rampup"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "mentored_sp23_rampup"
+	}
+}
