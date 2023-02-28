@@ -15,7 +15,7 @@
 
 #headline {
     display:flex;
-    
+    margin: 125px;
     align-content:center;
     
 }
@@ -57,5 +57,9 @@ select:focus{
     font-family: 'Palatino', Courier, monospace;
     width: 50vw;
     margin:30px;
+}
+
+.recommendation-image {
+    text-align: center;
 }
 
